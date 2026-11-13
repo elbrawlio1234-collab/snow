@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>NES - Web Emulator</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            overflow: hidden;
+        }
+        #game {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="game"></div>
+
+    <script>
+        EJS_player = '#game';
+        EJS_core = 'nes'; // Núcleo oficial para NES
+        EJS_gameName = 'snow'; // Cambia por el nombre de tu juego
+        EJS_gameUrl = 'https://tu-usuario.github.io/tu-repositorio/juego.nes'; // Enlace a tu archivo .nes
+        EJS_pathtodata = 'https://cdn.emulatorjs.org/stable/data/';
+        EJS_language = 'es-ES';
+        EJS_startOnLoaded = true;
+        EJS_defaultOptions = {
+            useTouch: true,
+            shader: 'disabled'
+        };
+    </script>
+    <script src="https://cdn.emulatorjs.org/stable/data/loader.js"></script>
+</body>
+</html>
